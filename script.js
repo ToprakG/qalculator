@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let timeLeft = 60; // Time limit in seconds
 
     function initializeGame() {
-        startingNumber = Math.floor(Math.random() * 1000) + 1; // Adjust range as needed
-        targetNumber = Math.floor(Math.random() * 1000) + 1;
+        startingNumber = Math.floor(Math.random() * 100) + 1; // Adjust range as needed
+        targetNumber = Math.floor(Math.random() * 100) + 1;
         operationsCount = 0;
         timeLeft = 60; // Reset time
 
@@ -90,8 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
     buttons.add1.addEventListener('click', () => updateGame(startingNumber + 1));
     buttons.divideBy10.addEventListener('click', () => updateGame(Math.floor(startingNumber / 10)));
     buttons.multiplyBy10.addEventListener('click', () => updateGame(startingNumber * 10));
-    buttons.subtract10.addEventListener('click', () => updateGame(startingNumber - 10));
-    buttons.add10.addEventListener('click', () => updateGame(startingNumber + 10));
+    buttons.subtract10.addEventListener('click', () => updateGame(startingNumber - 3));
+    buttons.add10.addEventListener('click', () => updateGame(startingNumber + 3));
     buttons.resetButton.addEventListener('click', initializeGame);
 
     initializeGame();
