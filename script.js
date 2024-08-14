@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let timeLeft = 60; // Time limit in seconds
 
     function initializeGame() {
-        startingNumber = Math.floor(Math.random() * 100) + 1; // Adjust range as needed
-        targetNumber = Math.floor(Math.random() * 100) + 1;
+        startingNumber = Math.floor(Math.random() * 1000) + 1; // Adjust range as needed
+        targetNumber = Math.floor(Math.random() * 1000) + 1;
         operationsCount = 0;
         timeLeft = 60; // Reset time
 
