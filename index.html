@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Target Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="calculator.png">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Number Target Game</h1>
+        <div id="info">
+            <p>Time Left: <span id="time-left">60</span> seconds</p> <!-- Timer Display -->
+            <p>Starting Number: <span id="starting-number">0</span></p>
+            <p>Target Number: <span id="target-number">0</span></p>
+            <p>Operations Used: <span id="operations-count">0</span></p>
+            <p>Status: <span id="status"></span></p>
+            <p><span id="path"></span></p>
+        </div>
+        <div id="controls">
+            <button id="multiply-by-2">Multiply by 2</button>
+            <button id="divide-by-2">Divide by 2</button>
+            <button id="subtract-1">Subtract 1</button>
+            <button id="add-1">Add 1</button>
+            <button id="divide-by-10">Divide by 10</button>
+            <button id="multiply-by-10">Multiply by 10</button>
+            <button id="subtract-10">Subtract 10</button>
+            <button id="add-10">Add 10</button>
+            <button id="reset-button">Reset</button>
+        </div>
+        <p id="status"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
